@@ -8,7 +8,7 @@ const ns = 'Demo';
 const app = new cdk.App({
   context: {
     ns,
-    ingressCIDR: '211.193.59.247/32',
+    ingressCIDR: '39.115.51.138/32',
   },
 });
 

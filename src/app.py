@@ -37,7 +37,7 @@ def get_conn_pool():
     secret_value = json.loads(resp['SecretString'])
 
     return pool.SimpleConnectionPool(
-        1, 5, 
+        5, 5, 
         user=secret_value['username'],
         password=secret_value['password'],
         host=secret_value['host'],
@@ -92,7 +92,7 @@ class BaseResource(object):
         try:
             return PG_POOL.getconn()
         except (Exception, pg2.DatabaseError) as e:
-            logger.error(traceback.format_stack())
+            traceback.print_exc()
             raise falcon.HTTPBadRequest('Error while connecting to PostgreSQL')
 
 

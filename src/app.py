@@ -61,7 +61,6 @@ class XRayMiddleWare(object):
         segment.put_http_meta(http.METHOD, req.method)
 
     def process_response(self, req, resp, resource, req_succeeded):
-        logger.info(f'resp code: {resp.status}')
         req.context.segment.put_http_meta(http.STATUS, resp.status.split()[0])
         req.context.segment = None
         xray_recorder.end_segment()
@@ -145,7 +144,6 @@ class PostsResource(BaseResource):
         if not username:
             raise falcon.HTTPBadRequest('username should not be empty')
 
-        logger.info(f'username: {username}')
         req.context.segment.put_annotation('username', username)
 
         conn = self.get_conn()

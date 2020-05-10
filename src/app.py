@@ -29,7 +29,7 @@ random.seed(17)
 
 SECRET_ARN = 'arn:aws:secretsmanager:ap-northeast-2:929831892372:secret:RdsClusterDemoSecret8F16788-mmSp7Q22t6WR-17fNio'
 PG_POOL = None
-CHAOTIC_THRESHOLD = 20
+CHAOTIC_THRESHOLD = 30
 
 
 def get_conn_pool():

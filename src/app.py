@@ -149,7 +149,7 @@ class PostsResource(BaseResource):
         conn = self.get_conn()
         with xray_recorder.in_subsegment('create post') as subsegment:
             with conn.cursor() as cursor:
-                sql = f"INSERT INTO posts (title, content, username) VALUES ('{title}', '{content}', '{username}'"
+                sql = f"INSERT INTO posts (title, content, username) VALUES ('{title}', '{content}', '{username}')"
                 cursor.execute(sql)
                 conn.commit()
             subsegment.put_metadata('sql', sql)

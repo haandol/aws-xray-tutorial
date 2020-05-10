@@ -29,7 +29,7 @@ random.seed(17)
 
 SECRET_ARN = 'arn:aws:secretsmanager:ap-northeast-2:929831892372:secret:RdsClusterDemoSecret8F16788-mmSp7Q22t6WR-17fNio'
 PG_POOL = None
-CHAOTIC_THRESHOLD = 50
+CHAOTIC_THRESHOLD = 20
 
 
 def get_conn_pool():
@@ -135,6 +135,7 @@ class InitResource(BaseResource):
 class PostsResource(BaseResource):
     def on_post(self, req, resp):
         params = self.get_params(req)
+        print(params)
         title = params.get('title', '')
         content = params.get('content', '')
         if not (title and content):
@@ -144,7 +145,8 @@ class PostsResource(BaseResource):
         if not username:
             raise falcon.HTTPBadRequest('username should not be empty')
 
-        req.context.segment.put_annotation('user', username)
+        logger.info(f'username: {username}')
+        req.context.segment.put_annotation('username', username)
 
         conn = self.get_conn()
         with xray_recorder.in_subsegment('create post') as subsegment:

@@ -37,7 +37,7 @@ def get_conn_pool():
     secret_value = json.loads(resp['SecretString'])
 
     return pool.SimpleConnectionPool(
-        5, 5, 
+        1, 5, 
         user=secret_value['username'],
         password=secret_value['password'],
         host=secret_value['host'],
@@ -115,7 +115,8 @@ class InitResource(BaseResource):
                 cursor.execute(sql)
                 conn.commit()
             subsegment.put_metadata('sql', sql)
-        xray_recorder.end_subsegment()
+        PG_POOL.putconn(conn)
+
         resp.status = falcon.HTTP_OK
         resp.body = 'ok'
 
@@ -127,6 +128,8 @@ class InitResource(BaseResource):
                 cursor.execute(sql)
                 conn.commit()
             subsegment.put_metadata('sql', sql)
+        PG_POOL.putconn(conn)
+
         resp.status = falcon.HTTP_OK
         resp.body = 'ok'
 
@@ -134,7 +137,6 @@ class InitResource(BaseResource):
 class PostsResource(BaseResource):
     def on_post(self, req, resp):
         params = self.get_params(req)
-        print(params)
         title = params.get('title', '')
         content = params.get('content', '')
         if not (title and content):
@@ -153,6 +155,7 @@ class PostsResource(BaseResource):
                 cursor.execute(sql)
                 conn.commit()
             subsegment.put_metadata('sql', sql)
+        PG_POOL.putconn(conn)
 
         resp.status = falcon.HTTP_OK
         resp.body = 'ok'
@@ -168,6 +171,7 @@ class PostResource(BaseResource):
                 cursor.execute(sql)
                 posts = cursor.fetchall()
             subsegment.put_metadata('sql', sql)
+        PG_POOL.putconn(conn)
 
         resp.status = falcon.HTTP_OK
         resp.body = json.dumps(posts)
@@ -181,6 +185,7 @@ class PostResource(BaseResource):
                 cursor.execute(sql)
                 conn.commit()
             subsegment.put_metadata('sql', sql)
+        PG_POOL.putconn(conn)
 
         resp.status = falcon.HTTP_OK
         resp.body = 'ok'

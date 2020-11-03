@@ -8,13 +8,13 @@ const ns = 'Demo';
 const app = new cdk.App({
   context: {
     ns,
-    ingressCIDR: '39.115.51.138/32',
+    ingressCIDR: '54.239.119.16/32',
   },
 });
 
-const vpcStack = new VpcStack(app, `VpcStack${ns}`);
+const vpcStack = new VpcStack(app, `${ns}VpcStack`);
 
-const rdsStack = new RdsStack(app, `RdsStack${ns}`, {
+const rdsStack = new RdsStack(app, `${ns}RdsStack`, {
   vpc: vpcStack.vpc,
 });
 rdsStack.addDependency(vpcStack);

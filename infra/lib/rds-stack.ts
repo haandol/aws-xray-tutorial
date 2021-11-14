@@ -33,7 +33,7 @@ export class RdsStack extends cdk.Stack {
       parameterGroup: rds.ParameterGroup.fromParameterGroupName(
         this,
         `RdsParameterGroup`,
-        'default.aurora-postgresql11'
+        'default.aurora-postgresql13'
       ),
     });
     cluster.addRotationSingleUser();

@@ -1142,7 +1142,7 @@
                     "engine": "aurora-postgresql",
                     "copyTagsToSnapshot": true,
                     "databaseName": "pgdb",
-                    "dbClusterParameterGroupName": "default.aurora-postgresql11",
+                    "dbClusterParameterGroupName": "default.aurora-postgresql13",
                     "dbSubnetGroupName": {
                       "Ref": "RdsClusterSubnetsC1949EB4"
                     },

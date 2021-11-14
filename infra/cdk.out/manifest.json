@@ -1,0 +1,1411 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "DemoVpcStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "DemoVpcStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/DemoVpcStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38",
+            "trace": [
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:758:21)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1Subnet5C2D37C4",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1050:20)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTable6C95E38E",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1068:19)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTableAssociation97140677",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1074:5)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1DefaultRoute3DA9E72A",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1084:19)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:811:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:810:46)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1EIPD7E02669",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1214:21)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NATGateway4D7517AA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1212:17)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2Subnet691E08A3",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1050:20)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTable94F7E489",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1068:19)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1074:5)",
+              "new PublicSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1206:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:935:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2DefaultRoute97F91067",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1084:19)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:811:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:810:46)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2EIP3C605A87",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1214:21)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2NATGateway9182C01D",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1212:17)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1Subnet536B997A",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1050:20)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableB2C5B500",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1068:19)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1074:5)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1116:19)",
+              "NatGatewayProvider.configureSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2Subnet3788AAA1",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1050:20)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableA678073B",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1068:19)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+            "trace": [
+              "new Subnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1074:5)",
+              "new PrivateSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:5)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:940:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:917:28)",
+              "Vpc.createSubnets (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:912:12)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:792:10)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2DefaultRoute060D2087",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1116:19)",
+              "NatGatewayProvider.configureSubnet (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:14)",
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:817:14)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIGWD7BA715C",
+            "trace": [
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:799:19)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcVPCGWBF912B6E",
+            "trace": [
+              "new Vpc (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:805:19)",
+              "new VpcStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/vpc-stack.ts:10:17)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:15:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoVpcStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoVpcStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet1Subnet5C2D37C4\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpcPublicSubnet1Subnet5C2D37C4FFA2B456",
+            "trace": [
+              "VpcStack.exportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stack.ts:494:7)",
+              "createImportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:167:37)",
+              "resolveValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:103:10)",
+              "Object.resolveReferences (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet2Subnet691E08A3\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpcPublicSubnet2Subnet691E08A351552740",
+            "trace": [
+              "VpcStack.exportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stack.ts:494:7)",
+              "createImportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:167:37)",
+              "resolveValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:103:10)",
+              "Object.resolveReferences (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Exports/Output{\"Ref\":\"Vpc8378EB38\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefVpc8378EB38272D6E3A",
+            "trace": [
+              "VpcStack.exportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stack.ts:494:7)",
+              "createImportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:167:37)",
+              "resolveValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:103:10)",
+              "Object.resolveReferences (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoVpcStack/Exports/Output{\"Fn::GetAtt\":[\"Vpc8378EB38\",\"CidrBlock\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttVpc8378EB38CidrBlock14DD2396",
+            "trace": [
+              "VpcStack.exportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stack.ts:494:7)",
+              "createImportValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:167:37)",
+              "resolveValue (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:103:10)",
+              "Object.resolveReferences (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/refs.ts:30:24)",
+              "Object.prepareApp (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:31:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "DemoVpcStack"
+    },
+    "DemoRdsStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "DemoRdsStack.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "DemoVpcStack"
+      ],
+      "metadata": {
+        "/DemoRdsStack/RdsCluster/Subnets/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSubnetsC1949EB4",
+            "trace": [
+              "new SubnetGroup (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:48:25)",
+              "new DatabaseClusterNew (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:157:45)",
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:319:5)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Ignoring Egress rule since 'allowAllOutbound' is set to true; To add customize rules, set allowAllOutbound=false on the SecurityGroup",
+            "trace": [
+              "Annotations.addMessage (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/annotations.ts:57:25)",
+              "Annotations.addWarning (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/annotations.ts:19:10)",
+              "SecurityGroup.addEgressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:30)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:126:23",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:124:32",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowInternally (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:123:26)",
+              "Connections.allowDefaultPortInternally (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:154:10)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:40:25)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecurityGroup7E54DD55",
+            "trace": [
+              "new SecurityGroup (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:251:26)",
+              "new DatabaseClusterNew (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:165:7)",
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:319:5)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup/from DemoRdsStackRdsClusterRotationSingleUserSecurityGroup16BB8521:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecurityGroupfromDemoRdsStackRdsClusterRotationSingleUserSecurityGroup16BB8521IndirectPort437D71E4",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:107:23",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:106:45",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:105:26)",
+              "Connections.allowDefaultPortFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:146:10)",
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:173:30)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup/from DemoRdsStackRdsClusterSecurityGroup2D0B7D7A:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecurityGroupfromDemoRdsStackRdsClusterSecurityGroup2D0B7D7AIndirectPortC78E7565",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:125:23",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:124:32",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowInternally (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:123:26)",
+              "Connections.allowDefaultPortInternally (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:154:10)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:40:25)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup/from {IndirectPeer}:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecurityGroupfromIndirectPeerIndirectPortF71E6E6D",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:107:23",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:106:45",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:105:26)",
+              "Connections.allowDefaultPortFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:146:10)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:41:25)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/SecurityGroup/from 54.239.119.16_32:{IndirectPort}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecurityGroupfrom542391191632IndirectPort0C1B38A9",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
+              "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:107:23",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:106:45",
+              "ReactiveList.forEachAndForever (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:105:26)",
+              "Connections.allowDefaultPortFrom (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:146:10)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:42:25)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoRdsStackRdsClusterSecretB224398F3fdaad7efa858a3daf9490cf0a702aeb",
+            "trace": [
+              "new Secret (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:337:22)",
+              "new DatabaseSecret (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:37:5)",
+              "Object.renderCredentials (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:327:25)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecretAttachmentB0F52CBA",
+            "trace": [
+              "new SecretTargetAttachment (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:485:24)",
+              "DatabaseSecret.attach (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:220:12)",
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:355:28)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Secret/Attachment/RotationSchedule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecretAttachmentRotationScheduleF106258D",
+            "trace": [
+              "new RotationSchedule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/rotation-schedule.ts:70:5)",
+              "SecretTargetAttachment.addRotationSchedule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:173:12)",
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:224:18)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Secret/Attachment/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterSecretAttachmentPolicy7A1987B5",
+            "trace": [
+              "new ResourcePolicy (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/policy.ts:21:5)",
+              "SecretTargetAttachment.addToResourcePolicy (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:181:21)",
+              "SecretTargetAttachment.denyAccountRootDelete (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:198:10)",
+              "new RotationSchedule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/rotation-schedule.ts:80:18)",
+              "SecretTargetAttachment.addRotationSchedule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:173:12)",
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:224:18)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsCluster0F718D69",
+            "trace": [
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:330:21)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/Instance1": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterInstance1838E3E18",
+            "trace": [
+              "createInstances (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:522:22)",
+              "new DatabaseCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:359:30)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:19:21)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/RotationSingleUser/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterRotationSingleUserSecurityGroup660F21D2",
+            "trace": [
+              "new SecurityGroup (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:251:26)",
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:170:50)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/RotationSingleUser/SARMapping": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterRotationSingleUserSARMappingB84B87A5",
+            "trace": [
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:198:24)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/RdsCluster/RotationSingleUser/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RdsClusterRotationSingleUser358E00E9",
+            "trace": [
+              "new SecretRotation (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret-rotation.ts:210:25)",
+              "DatabaseCluster.addRotationSingleUser (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/cluster.ts:376:12)",
+              "RdsStack.createCluster (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:39:13)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:14:26)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/SecretArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SecretArn",
+            "trace": [
+              "RdsStack.putParams (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:48:5)",
+              "new RdsStack (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/lib/rds-stack.ts:15:10)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/bin/infra.ts:17:18)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/DemoRdsStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/DemoRdsStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "DemoRdsStack"
+    }
+  }
+}

@@ -4,7 +4,7 @@ import * as cdk from '@aws-cdk/core';
 import { VpcStack } from '../lib/vpc-stack';
 import { RdsStack } from '../lib/rds-stack';
 
-const ns = 'Demo';
+const ns = 'XrayDemo';
 const app = new cdk.App({
   context: {
     ns,

@@ -18,9 +18,9 @@ export class RdsStack extends cdk.Stack {
   createCluster(props: Props, ingressCIDR: string): rds.DatabaseCluster {
     const cluster = new rds.DatabaseCluster(this, `RdsCluster`, {
       engine: rds.DatabaseClusterEngine.auroraPostgres({
-        version: rds.AuroraPostgresEngineVersion.VER_11_7,
+        version: rds.AuroraPostgresEngineVersion.VER_13_4,
       }),
-      credentials: rds.Credentials.fromUsername('postgres'),
+      credentials: rds.Credentials.fromGeneratedSecret('postgres'),
       instances: 1,
       instanceProps: {
         vpc: props.vpc,

@@ -10,8 +10,8 @@ We are going to run *app.py* on localhost to run some CRUD operations on RDS and
 
 - Docker 19+
 - awscli
-- Python 3.4+
-- Nodejs 10.20+
+- Python 3.8
+- Nodejs 12
 - AWS Account and Locally configured AWS credential
 
 # Installation
@@ -32,7 +32,7 @@ $ npm i
 Install cdk in global context and run `cdk init` if you did not initailize cdk yet.
 
 ```bash
-$ npm i -g cdk
+$ npm i -g cdk@1.132.0
 $ cdk init
 $ cdk bootstrap
 ```

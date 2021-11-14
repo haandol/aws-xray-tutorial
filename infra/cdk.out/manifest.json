@@ -7,15 +7,15 @@
         "file": "tree.json"
       }
     },
-    "DemoVpcStack": {
+    "XrayDemoVpcStack": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "DemoVpcStack.template.json",
+        "templateFile": "XrayDemoVpcStack.template.json",
         "validateOnSynth": false
       },
       "metadata": {
-        "/DemoVpcStack/Vpc/Resource": [
+        "/XrayDemoVpcStack/Vpc/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "Vpc8378EB38",
@@ -41,7 +41,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/Subnet": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1Subnet5C2D37C4",
@@ -73,7 +73,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/RouteTable": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1RouteTable6C95E38E",
@@ -105,7 +105,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/RouteTableAssociation": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1RouteTableAssociation97140677",
@@ -137,7 +137,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/DefaultRoute": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1DefaultRoute3DA9E72A",
@@ -166,7 +166,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/EIP": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1EIPD7E02669",
@@ -195,7 +195,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet1/NATGateway": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet1NATGateway4D7517AA",
@@ -224,7 +224,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/Subnet": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2Subnet691E08A3",
@@ -256,7 +256,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/RouteTable": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2RouteTable94F7E489",
@@ -288,7 +288,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/RouteTableAssociation": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8",
@@ -320,7 +320,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/DefaultRoute": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2DefaultRoute97F91067",
@@ -349,7 +349,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/EIP": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/EIP": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2EIP3C605A87",
@@ -378,7 +378,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PublicSubnet2/NATGateway": [
+        "/XrayDemoVpcStack/Vpc/PublicSubnet2/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPublicSubnet2NATGateway9182C01D",
@@ -407,7 +407,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet1/Subnet": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet1Subnet536B997A",
@@ -439,7 +439,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet1/RouteTable": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet1RouteTableB2C5B500",
@@ -471,7 +471,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
@@ -503,7 +503,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet1/DefaultRoute": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED",
@@ -533,7 +533,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet2/Subnet": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet2Subnet3788AAA1",
@@ -565,7 +565,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet2/RouteTable": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet2RouteTableA678073B",
@@ -597,7 +597,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
@@ -629,7 +629,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/PrivateSubnet2/DefaultRoute": [
+        "/XrayDemoVpcStack/Vpc/PrivateSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcPrivateSubnet2DefaultRoute060D2087",
@@ -659,7 +659,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/IGW": [
+        "/XrayDemoVpcStack/Vpc/IGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcIGWD7BA715C",
@@ -685,7 +685,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Vpc/VPCGW": [
+        "/XrayDemoVpcStack/Vpc/VPCGW": [
           {
             "type": "aws:cdk:logicalId",
             "data": "VpcVPCGWBF912B6E",
@@ -711,7 +711,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/CDKMetadata/Default": [
+        "/XrayDemoVpcStack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -731,7 +731,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/CDKMetadata/Condition": [
+        "/XrayDemoVpcStack/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable",
@@ -751,7 +751,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet1Subnet5C2D37C4\"}": [
+        "/XrayDemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet1Subnet5C2D37C4\"}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ExportsOutputRefVpcPublicSubnet1Subnet5C2D37C4FFA2B456",
@@ -771,7 +771,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet2Subnet691E08A3\"}": [
+        "/XrayDemoVpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet2Subnet691E08A3\"}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ExportsOutputRefVpcPublicSubnet2Subnet691E08A351552740",
@@ -791,7 +791,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Exports/Output{\"Ref\":\"Vpc8378EB38\"}": [
+        "/XrayDemoVpcStack/Exports/Output{\"Ref\":\"Vpc8378EB38\"}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ExportsOutputRefVpc8378EB38272D6E3A",
@@ -811,7 +811,7 @@
             ]
           }
         ],
-        "/DemoVpcStack/Exports/Output{\"Fn::GetAtt\":[\"Vpc8378EB38\",\"CidrBlock\"]}": [
+        "/XrayDemoVpcStack/Exports/Output{\"Fn::GetAtt\":[\"Vpc8378EB38\",\"CidrBlock\"]}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "ExportsOutputFnGetAttVpc8378EB38CidrBlock14DD2396",
@@ -832,20 +832,20 @@
           }
         ]
       },
-      "displayName": "DemoVpcStack"
+      "displayName": "XrayDemoVpcStack"
     },
-    "DemoRdsStack": {
+    "XrayDemoRdsStack": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "DemoRdsStack.template.json",
+        "templateFile": "XrayDemoRdsStack.template.json",
         "validateOnSynth": false
       },
       "dependencies": [
-        "DemoVpcStack"
+        "XrayDemoVpcStack"
       ],
       "metadata": {
-        "/DemoRdsStack/RdsCluster/Subnets/Default": [
+        "/XrayDemoRdsStack/RdsCluster/Subnets/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSubnetsC1949EB4",
@@ -874,7 +874,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup": [
           {
             "type": "aws:cdk:warning",
             "data": "Ignoring Egress rule since 'allowAllOutbound' is set to true; To add customize rules, set allowAllOutbound=false on the SecurityGroup",
@@ -909,7 +909,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecurityGroup7E54DD55",
@@ -938,10 +938,10 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup/from DemoRdsStackRdsClusterRotationSingleUserSecurityGroup16BB8521:{IndirectPort}": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup/from XrayDemoRdsStackRdsClusterRotationSingleUserSecurityGroup1FAD6D8B:{IndirectPort}": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "RdsClusterSecurityGroupfromDemoRdsStackRdsClusterRotationSingleUserSecurityGroup16BB8521IndirectPort437D71E4",
+            "data": "RdsClusterSecurityGroupfromXrayDemoRdsStackRdsClusterRotationSingleUserSecurityGroup1FAD6D8BIndirectPort32F93678",
             "trace": [
               "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
               "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
@@ -974,10 +974,10 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup/from DemoRdsStackRdsClusterSecurityGroup2D0B7D7A:{IndirectPort}": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup/from XrayDemoRdsStackRdsClusterSecurityGroupA6D33A1F:{IndirectPort}": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "RdsClusterSecurityGroupfromDemoRdsStackRdsClusterSecurityGroup2D0B7D7AIndirectPortC78E7565",
+            "data": "RdsClusterSecurityGroupfromXrayDemoRdsStackRdsClusterSecurityGroupA6D33A1FIndirectPort5C6111E3",
             "trace": [
               "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:67:7)",
               "SecurityGroup.addIngressRule (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:268:13)",
@@ -1008,7 +1008,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup/from {IndirectPeer}:{IndirectPort}": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup/from {IndirectPeer}:{IndirectPort}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecurityGroupfromIndirectPeerIndirectPortF71E6E6D",
@@ -1042,7 +1042,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/SecurityGroup/from 54.239.119.16_32:{IndirectPort}": [
+        "/XrayDemoRdsStack/RdsCluster/SecurityGroup/from 54.239.119.16_32:{IndirectPort}": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecurityGroupfrom542391191632IndirectPort0C1B38A9",
@@ -1076,10 +1076,10 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Secret/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/Secret/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "DemoRdsStackRdsClusterSecretB224398F3fdaad7efa858a3daf9490cf0a702aeb",
+            "data": "XrayDemoRdsStackRdsClusterSecretCBD2FE3A3fdaad7efa858a3daf9490cf0a702aeb",
             "trace": [
               "new Secret (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:337:22)",
               "new DatabaseSecret (/Users/dongkyl/Documents/git/aws-xray-tutorial/infra/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:37:5)",
@@ -1106,7 +1106,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Secret/Attachment/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/Secret/Attachment/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecretAttachmentB0F52CBA",
@@ -1135,7 +1135,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Secret/Attachment/RotationSchedule/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/Secret/Attachment/RotationSchedule/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecretAttachmentRotationScheduleF106258D",
@@ -1165,7 +1165,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Secret/Attachment/Policy/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/Secret/Attachment/Policy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterSecretAttachmentPolicy7A1987B5",
@@ -1198,7 +1198,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsCluster0F718D69",
@@ -1225,7 +1225,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/Instance1": [
+        "/XrayDemoRdsStack/RdsCluster/Instance1": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterInstance1838E3E18",
@@ -1253,7 +1253,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/RotationSingleUser/SecurityGroup/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/RotationSingleUser/SecurityGroup/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterRotationSingleUserSecurityGroup660F21D2",
@@ -1282,7 +1282,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/RotationSingleUser/SARMapping": [
+        "/XrayDemoRdsStack/RdsCluster/RotationSingleUser/SARMapping": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterRotationSingleUserSARMappingB84B87A5",
@@ -1310,7 +1310,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/RdsCluster/RotationSingleUser/Resource": [
+        "/XrayDemoRdsStack/RdsCluster/RotationSingleUser/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "RdsClusterRotationSingleUser358E00E9",
@@ -1338,7 +1338,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/SecretArn": [
+        "/XrayDemoRdsStack/SecretArn": [
           {
             "type": "aws:cdk:logicalId",
             "data": "SecretArn",
@@ -1364,7 +1364,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/CDKMetadata/Default": [
+        "/XrayDemoRdsStack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata",
@@ -1384,7 +1384,7 @@
             ]
           }
         ],
-        "/DemoRdsStack/CDKMetadata/Condition": [
+        "/XrayDemoRdsStack/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable",
@@ -1405,7 +1405,7 @@
           }
         ]
       },
-      "displayName": "DemoRdsStack"
+      "displayName": "XrayDemoRdsStack"
     }
   }
 }
